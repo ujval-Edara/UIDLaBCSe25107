@@ -1,0 +1,19 @@
+h1
+  {
+    font-family: 'Dancing Script',cursive;color: bisque;text-align: center;
+  }
+
+body
+    {
+    background-color: black;
+    }
+
+p
+    {
+    font-family: 'Poppins',sans-serif;font-size: larger;color: white;
+    }
+
+h2
+    {
+    font-family: 'Pacifico',cursive;color: rgb(255, 255, 254);border-radius: 5px solid; background-color:rgb(108, 178, 213);
+    }

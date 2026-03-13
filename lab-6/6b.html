@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "sale sale"
+            "salebar product"
+            "footer footer";
+            grid-template-columns: 250px 1fr;
+
+        }
+
+        .header{
+            grid-area: header;
+            border: 2px;border-radius: 2px;
+            background-color:#F7E200;
+            color: #000;;
+            border-width: 4px;
+            padding: 20px;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+        }
+        .sale{
+            grid-area: sale;
+            border: 2px;
+            background-color: #2874f0;
+            border-width: 4px;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: xx-large;
+            font-size: small;
+        }
+        .salebar
+        {
+            grid-area: salebar;
+            border: 2px solid;
+            border-radius: 5px;
+            font-size: x-large;
+            color: rgb(0, 0, 0);
+        }
+
+        .salebar p {
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        .product{
+            grid-area: product;
+            transition: 0.3s;
+            color: rgb(0, 0, 0);
+            
+        }
+
+        .salebar a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .product p{
+            cursor: pointer;
+        }
+        
+
+        .footer{
+            grid-area: footer;
+            font-size: xx-large;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .item{
+            border: 2px solid;
+            border-radius: 45px;
+            width: 100%;
+            text-align: center;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="container">
+        <div class="header">
+            <b>Flipkart</b>
+        </div>
+        <div class="sale">
+           <center> <form action="https://www.flipkart.com/search?">
+                <input type="text" placeholder="Search for an item" style="width: 400px; padding: 8px;" name="q">
+                <center><p style="text-align: right; font-size: x-large;"> Search | Account</p></center>
+            </form></center>
+        </div>
+
+        <div class="salebar">
+            <center>
+                <a href="cricket.html" alt="loading" target="box">
+                    Cricket Equiqment
+                </a><br>
+                <br>
+                <a href="volleyball.html"  alt="loading"  target="box">
+                    Volleyball Equiqment
+                </a><br>
+                <br>
+                <a href="basketball.html" alt="loading"  target="box">
+                    Basketball Equiqment                
+                </a><br>
+                <br>
+                <a href="badminton.html" alt="loading"  target="box">
+                    Badminton Equiqment
+                </a><br>
+                <br>
+                <a href="football.html" alt="loading"  target="box">
+                    Football Equiqment
+                </a><br>
+                <br>
+                <a href="golf.html" alt="loading"  target="box">
+                    Golf Equiqment
+                </a><br>
+            </center>
+        </div>
+        <div class="product">
+            <iframe name="box" width="1400px" height="700px"></iframe>
+        </div>
+        
+        <div class="footer">
+                <p><b>© 2026 Registration System | All Rights Reserve</b></p>
+        </div>
+
+    </div>
+</body>
+</html>

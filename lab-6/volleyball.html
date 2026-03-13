@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .product{
+            backdrop-filter: blur(10px);
+            display: grid;
+            grid-area: product;
+            transition: 0.3s;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            gap: 60px;
+        }
+        .product div:hover{
+            transform: scale(1.03);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2) ;
+        }
+        .product img{
+             width: 400px;
+            height: 300px;
+            object-fit: cover;
+            
+        }
+
+        .product div{
+            padding: 15px;
+            width: 100;
+            height: 150;
+            
+        }
+        .product p{
+            cursor: pointer;
+        }
+        .item{
+            border: 2px solid;
+            border-radius: 45px;
+            width: 100%;
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+        <div class="product">
+            <div class="item"><img src="volleyball.jpg" alt="Cricket kit" >
+                <b><p>Volleyball</p>
+                <p>Price: $13.16</p></b>
+            </div>
+        </div><p style="font-size: larger;">Search for more</p>
+
+        
+</body>
+</html>

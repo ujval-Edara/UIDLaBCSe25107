@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .product{
+            backdrop-filter: blur(10px);
+            display: grid;
+            grid-area: product;
+            transition: 0.3s;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            gap: 60px;
+        }
+        .product div:hover{
+            transform: scale(1.03);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2) ;
+        }
+        .product img{
+             width: 400px;
+            height: 300px;
+            object-fit: cover;
+            
+        }
+
+        .product div{
+            padding: 15px;
+            width: 100;
+            height: 150;
+            
+        }
+        .product p{
+            cursor: pointer;
+        }
+        .item{
+            border: 2px solid;
+            border-radius: 45px;
+            width: 100%;
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+        <div class="product">
+            <div class="item"><img src="bat.jpg" alt="Cricket kit" >
+                <b><p>Cricket Bat</p>
+                <p>Price: $163.16</p></b>
+            </div>
+            <div class="item"><img src="corkball.jpg" alt="Cricket kit">
+                <b><p>Cork Ball</p>
+                <p>Price: $5.48.16</p></b>
+            </div>
+            <div class="item"><img src="helmet.jpg" alt="Cricket kit">
+                <b><p>Cricket helmet</p>
+                <p>Price: $24.16</p></b>
+            </div>
+            <div class="item"><img src="glows.jpg" alt="Cricket kit">
+                <p><b>Cricket Glows</b></p>
+                <p><b>Price: $13.16</b></p>
+            </div>
+            <div class="item"><img src="pads.jpg" alt="Cricket kit">
+                <b><p>Cricket Pads</p>
+                <p>Price: $63.16</p></b>
+            </div>
+            <div  class="item"><img src="tennis.jpg" alt="Cricket kit">
+                <b><p>Tennis ball</p>
+                <p>Price: $1</p></b>
+            </div>
+        </div>
+</body>
+</html>
