@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NUMBERS</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: rgb(126, 233, 219);
+            text-align: center;
+        }
+
+        .main {
+            background: rgb(94, 94, 94);
+            width: 320px;
+            margin: 80px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgb(246, 242, 242);
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 4px;
+            border: none;
+            border-radius: 5px;
+            background: #cbdaff;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #d7d7d7;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: rgb(191, 245, 141);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main">
+    <h2>Number Operations</h2>
+
+    <input type="number" id="num" placeholder="Enter a number">
+
+    <br>
+
+    <button onclick="evenOdd()">Even / Odd</button>
+    <button onclick="primeCheck()">Prime</button>
+    <button onclick="factorial()">Factorial</button>
+    <button onclick="armstrong()">Armstrong</button>
+
+    <div id="result">THIS IS THE PLACE OF OUTPUT</div>
+</div>
+
+<script>
+
+
+function getNumber() {
+    return Number(document.getElementById("num").value);
+}
+
+function show(msg) {
+    document.getElementById("result").innerHTML = msg;
+}
+
+
+function evenOdd() {
+    let n = getNumber();
+
+    if (n % 2 === 0)
+        show(n + " is Even");
+    else
+        show(n + " is Odd");
+}
+
+
+function primeCheck() {
+    let n = getNumber();
+    let isPrime = true;
+
+    if (n <= 1) isPrime = false;
+
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime)
+        show(n + " is Prime");
+    else
+        show(n + " is Not Prime");
+}
+
+
+function factorial() {
+    let n = getNumber();
+    let f = 1;
+
+    for (let i = 1; i <= n; i++) {
+        f *= i;
+    }
+
+    show("Factorial = " + f);
+}
+
+function armstrong() {
+    let n = getNumber();
+    let temp = n;
+    let sum = 0;
+
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += digit * digit * digit;
+        temp = Math.floor(temp / 10);
+    }
+
+    if (sum === n)
+        show(n + " is Armstrong");
+    else
+        show(n + " is Not Armstrong");
+}
+
+</script>
+
+</body>
+</html>
