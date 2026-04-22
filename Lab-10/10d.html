@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even | Odd Iterator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-card">
+        <h2>Even | Odd</h2>
+        <button onclick="run()">Run</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const display = document.getElementById('result');
+        display.innerHTML = "";
+        function run() {
+            for (let i=1; i<=15; i++) {
+                if (i==1) {
+                    display.innerHTML += `1 is neither even nor odd <br>`;
+                }
+                else if (i%2==0) {
+                    display.innerHTML += `${i} is Even <br>`;
+                }
+                else {
+                    display.innerHTML += `${i} is Odd <br>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
