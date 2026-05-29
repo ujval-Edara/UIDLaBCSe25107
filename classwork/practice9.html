@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: aqua;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: darkblue;
+        }
+        button:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body style="padding: 50px;background-color: rgb(225, 214, 214);">
+    <center>
+        <div style="border-radius: 25px; border: 1px solid rgb(242, 231, 231)  ; width: 44%;height: 255PX; display: inline-block;align-items: center;align-content: center;padding: 45px; box-shadow: 10px 14px 55px rgba(0,0,0,0.03);background-color: aliceblue;" >
+        <div style="padding: 30px;">
+            <input type="number" id="name" placeholder="ENTER NUMBER">
+        </div>
+        <div style="padding: 30px;">
+            <button type="button" id="even" onclick="Even()">EVEN or ODD</button>
+            <button type="button" id="prime">PRIME or COMPOSITE</button>
+            <button type="button" id="arm">ARMSTRONG NUMBER</button>
+            <button type="button" id="fact">FACTORIAL</button>
+            <div id="out">this is the place of output</div>
+        </div>
+    </div>
+    </center>
+    <script>
+        let n  = parseInt(document.getElementById("name").value);
+        function show(msg){
+            Document.getElementById("out").innerHTML = msg;
+        }
+        function Even(){
+            if (n % 2 == 0){
+                show("even");
+            }
+
+            else {
+                show("odd");
+            }
+
+        }
+        function prime(){
+            isprime = true;
+            if (n<=1){
+                isprime=false;
+            }
+
+
+
+        }
+    
+    </script>
+    
+</body>
+</html>
